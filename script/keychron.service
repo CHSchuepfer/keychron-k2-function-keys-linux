@@ -3,6 +3,7 @@ Description=The command to make the Keychron K2 work
 
 [Service]
 Type=oneshot
+RemainAfterExit=yes
 ExecStart=/bin/bash -c "echo 0 > /sys/module/hid_apple/parameters/fnmode"
 
 [Install]
